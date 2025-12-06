@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import { useAuth } from '../../context/AuthContext';
+import heroImage from '../../assets/images/car-hero.png';
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -42,7 +43,7 @@ const Signup = () => {
       <div className="absolute inset-0 z-0">
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-bl from-secondary-900/20 to-primary-900/20"></div>
         <img
-          src="../../src/assets/images/car-hero.png"
+          src={heroImage}
           alt="Background"
           className="w-full h-full object-cover opacity-20"
         />

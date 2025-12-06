@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import FeaturedVehicles from '../../components/FeaturedVehicles';
 
+import heroImage from '../../assets/images/car-hero.png';
+
 const Home = () => {
   return (
     <div className="min-h-screen bg-gray-50">
@@ -9,7 +11,7 @@ const Home = () => {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/30 z-10"></div>
           <img
-            src="../../src/assets/images/car-hero.png"
+            src={heroImage}
             alt="Luxury Car"
             className="w-full h-full object-cover transform scale-105 animate-slow-zoom"
           />
