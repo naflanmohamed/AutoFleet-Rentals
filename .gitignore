@@ -38,4 +38,5 @@ uploads/
 *.local
 .cache/
 
-*.FORME_README.md
+# Forme
+FORME_README.md
